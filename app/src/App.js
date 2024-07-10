@@ -1,12 +1,18 @@
-import List from "./components/List"
-import user from "./user.json"
+import Cart from './components/Cart';
+import user from './user.json'; 
 
-
-function App() {
+const App = () => {
   return (
-    <>
-    <List user={user} />
-    </>
-  )
-}
+    <div className="App">
+      <Cart
+        username={user.username}
+        tag={user.tag}
+        location={user.location}
+        avatar={user.avatar}
+        stats={user.stats}
+      />
+    </div>
+  );
+};
+
 export default App;
