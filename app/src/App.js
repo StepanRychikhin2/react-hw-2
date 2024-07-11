@@ -1,5 +1,10 @@
 import Cart from './components/Cart';
 import user from './user.json'; 
+import data from './data.json'; 
+import frend from './isFrend.json'; 
+import List from './components/list';
+import Title from './components/Title';
+import Frendlist from './components/FrendList';
 
 const App = () => {
   return (
@@ -11,6 +16,10 @@ const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
+      <Title/>
+<List data={data} />
+<Frendlist frend={frend} />
+
     </div>
   );
 };
