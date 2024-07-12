@@ -1,19 +1,21 @@
-import Testve from "../components/TestVe";
+import TransLi from "./transLi";
 import { nanoid } from "nanoid";
 
 const randomId = nanoid();
 
-const List = ({ data }) => {
-  let it = 0;
+const TransList = ({ data }) => {
+  let it = 32;
   return (
     <ul>
       {data?.map((data) => {
         it++;
+        
         return (
-          <Testve data={data} key={data.id} />
+          <TransLi data={data} key={data.id} />
+          
         );
       })}
     </ul>
   );
 };
-export default List;
+export default TransList;

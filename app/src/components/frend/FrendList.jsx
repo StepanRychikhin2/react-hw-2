@@ -1,17 +1,17 @@
-import Frend from "../components/Frend";
+import Frend from "./Frend";
 import { nanoid } from "nanoid";
 
 const randomId = nanoid();
 
-const Frendlist = ({ isFrend }) => {
+const Frendlist = ({ data }) => {
   let it = 32;
   return (
     <ul>
-      {isFrend?.map((isFrend) => {
+      {data?.map((data) => {
         it++;
         
         return (
-          <Frend isFrend={isFrend} />
+          <Frend data={data} key={data.id} />
           
         );
       })}

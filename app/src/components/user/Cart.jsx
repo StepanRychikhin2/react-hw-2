@@ -1,6 +1,6 @@
-const Cart = ({ username, tag, location, avatar, stats }) => {
+const Cart = ({ id ,username, tag, location, avatar, stats }) => {
   return (
-    <div className="profile">
+    <div key={id} className="profile">
       <div className="description">
         <img
           src={avatar}

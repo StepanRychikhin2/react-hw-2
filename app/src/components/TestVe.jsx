@@ -1,12 +1,10 @@
-
-
-  const Testve = ({ data, itherator }) => {
+const Testve = ({ data, itherator }) => {
     return (
         
-      <li key={itherator}>
+      <li key={data.id}>
         
-         {data.label}
-         {data.percentage}
+         <p/>{data.label}
+         <p/> {data.percentage}%
       </li>
     );
   };
