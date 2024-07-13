@@ -7,6 +7,8 @@ import Title from "./components/Title";
 import Frendlist from "./components/frend/FrendList";
 import TransList from "./components/transition/Translist";
 import transJson from "./transotoion.json";
+import stule from "./components/Stats.module.css"
+
 const App = () => {
   return (
     <div className="App">
@@ -18,7 +20,7 @@ const App = () => {
         stats={user.stats}
       />
       <Title />
-      <List data={data} />
+      <List  data={data} />
       <Frendlist data={frend} />
       <TransList data={transJson} />
     </div>

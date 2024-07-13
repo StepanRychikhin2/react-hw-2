@@ -1,0 +1,36 @@
+.text {
+    color: white;
+}
+
+.list {
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.item {
+    padding-left: 20px;
+    width: 100px;
+    height: 100px;
+}
+.vithoc {
+    color: white;
+    font-size: 20px;
+}
+
+.title {
+    margin-left: 350px;
+    width: 600px;
+    background-color: rgb(234, 234, 234);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

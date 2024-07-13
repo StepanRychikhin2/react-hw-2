@@ -1,6 +1,6 @@
 import Frend from "./Frend";
 import { nanoid } from "nanoid";
-
+import stylee from  "./frendss.module.css"
 const randomId = nanoid();
 
 const Frendlist = ({ data }) => {

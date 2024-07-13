@@ -1,9 +1,10 @@
-const Frend = ({ data, itherator }) => {
+import stylee from  "./frendss.module.css"
+const Frend = ({ data }) => {
   return (
-    <li key={data.id}>
-      <img src={data.avatar} alt="User avatar" className="avatar" />
-      {data.name}
-      {data.isOnline}
+    <li className={stylee.item} key={data.id}>
+       <span className="awd" >{data.isOnline ? "ONLINE" : "OFLINE"}</span>
+      <img className={stylee.img} src={data.avatar} alt="User avatar" />
+     <p className={stylee.text}>{data.name}</p> 
     </li>
   );
 };
