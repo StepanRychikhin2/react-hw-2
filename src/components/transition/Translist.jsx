@@ -9,11 +9,8 @@ const TransList = ({ data }) => {
     <ul>
       {data?.map((data) => {
         it++;
-        
-        return (
-          <TransLi data={data} key={data.id} />
-          
-        );
+
+        return <TransLi data={data} key={data.id} />;
       })}
     </ul>
   );

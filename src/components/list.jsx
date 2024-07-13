@@ -9,9 +9,7 @@ const List = ({ data }) => {
     <ul>
       {data?.map((data) => {
         it++;
-        return (
-          <Testve data={data} key={data.id} />
-        );
+        return <Testve data={data} key={data.id} />;
       })}
     </ul>
   );
