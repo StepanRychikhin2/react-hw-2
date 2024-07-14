@@ -1,3 +1,9 @@
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+
 .text {
     color: white;
 }
@@ -6,7 +12,7 @@
    
     display: flex;
     align-items: center;
-    justify-content: center;
+
     list-style: none;
 }
 
@@ -21,16 +27,12 @@
 }
 
 .title {
-    margin-left: 350px;
+    
+    
     width: 600px;
     background-color: rgb(234, 234, 234);
     display: flex;
-    align-items: center;
+
     justify-content: center;
 }
 
-.div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}

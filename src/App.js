@@ -20,7 +20,7 @@ const App = () => {
         stats={user.stats}
       />
       <Title />
-      <List  data={data} />
+      <List data={data} />
       <Frendlist data={frend} />
       <TransList data={transJson} />
     </div>
