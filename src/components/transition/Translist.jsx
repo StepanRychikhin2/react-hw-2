@@ -1,6 +1,6 @@
 import TransLi from "./transLi";
 import { nanoid } from "nanoid";
-
+import sty from "./trans.module.css";
 const randomId = nanoid();
 
 const TransList = ({ data }) => {
@@ -10,7 +10,7 @@ const TransList = ({ data }) => {
       {data?.map((data) => {
         it++;
 
-        return <TransLi data={data} key={data.id} />;
+        return  <TransLi data={data} key={data.id} />;
       })}
     </ul>
   );

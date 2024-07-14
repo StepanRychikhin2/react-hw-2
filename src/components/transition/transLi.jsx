@@ -1,23 +1,16 @@
+import sty from "./trans.module.css";
 const Transli = ({ data }) => {
   return (
     <li key={data.id}>
-      <table>
-        <thead>
-          <tr>
-            <th>Type</th>
-            <th>Amount</th>
-            <th>Currency</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          <tr>
-            <td>{data.type}</td>
-            <td>{data.amount}</td>
-            <td>{data.currency}</td>
-          </tr>
-        </tbody>
-      </table>
+      <div>
+        <ul className={sty.list}>
+  
+            <li>{data.type}</li>
+            <li>{data.amount}</li>
+            <li>{data.currency}</li>
+          
+        </ul>
+      </div>
     </li>
   );
 };

@@ -1,0 +1,17 @@
+.labal {
+    background-color: aqua;
+}
+
+.listt {
+    display: flex;
+    gap: 10px;
+}
+
+.li {
+font-size: 20px;
+}
+
+.list {
+    display: flex;
+    gap: 30px;
+}
